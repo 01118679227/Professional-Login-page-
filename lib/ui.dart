@@ -72,46 +72,37 @@ class loginState extends State<login>{
                     ),
                     SizedBox(height: 29.0,),
 
-                      //## The TextField of Mobil Number ##
-
-                          Padding(
-                            padding: EdgeInsets.only(left: 14.0),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width * .7,
-                              height: 45.0,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey.shade200,
-                                      borderRadius: BorderRadius.circular(50.0),
-                                    ),
-                                    child:  Stack(
-                                      children: <Widget>[
-                                        Center(
-                                        child: TextField(
-                                          textAlign: TextAlign.center,
-                                          controller: null,
-                                          decoration: InputDecoration(
-                                            hintText: 'Mobil Number',
-                                            hintStyle: TextStyle(
-                                              fontSize: 14.0
-                                            ),
-                                            border: InputBorder.none,
-                                            enabledBorder: OutlineInputBorder(
-                                              borderRadius: BorderRadius.circular(50.0),
-                                            ),
-                                          ),
+                       //## The Mobil Number ##
+                                Padding(
+                                  padding: const EdgeInsets.only(left:18.0),
+                                  child: GestureDetector(
+                                      onTap: (){},
+                                        child: Container(
+                                        width: MediaQuery.of(context).size.width * .7,
+                                        height: 45.0,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey.shade200,
+                                          borderRadius: BorderRadius.circular(50.0),
+                                        ),
+                                        child: Stack(
+                                          children: <Widget>[
+                                          Center(
+                                          child: Text('Mobil Number',
+                                          style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 15.0,
+                                                 ),
+                                         ),
+                                        ),
+                                        Padding(
+                                           padding: const EdgeInsets.only(left:18.0,top: 14.0),
+                                               child: Image.asset('image/cellphone-line.png',height: 20.0,width: 20.0,),
+                                           ),
+                                          ],
                                         )
                                       ),
-                                      Align(
-                                        alignment: Alignment.centerLeft,
-                                        child: Padding(
-                                          padding: const EdgeInsets.only(left:18.0),
-                                          child: Image.asset('image/cellphone-line.png',height: 20.0,width: 20.0,),
-                                        ),
-                                       ),
-                                      ],
                                     ),
-                                   ),
-                          ),
+                                ),
 
                                  SizedBox(height: 20.0,),
 
